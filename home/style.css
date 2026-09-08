@@ -135,6 +135,7 @@ text-decoration: none;
     align-items: center;
     position: relative;
     margin-top: 100px;
+    margin-bottom: 100px;
  }
 
  .home_subtitulo h2{
@@ -152,6 +153,7 @@ text-decoration: none;
     font-size: 32px;
     position: absolute;
     bottom: -10px;
+    margin-bottom: 10px;
 }
 .home_subtitulo hr{
     max-width: 380px;
@@ -159,4 +161,69 @@ text-decoration: none;
     background-color: #c5a028;
     border: none;
     height: 2px;
+}
+.img_categoria1{
+    background-image: url(../img/pexels-jonathanborba-26774588\ 1.png);
+    /* width: 100%; */
+    width:770px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 50px 20px;
+    
+}
+
+.img_categoria1 span{
+    font-family: "Hanken Grotesk", sans-serif;
+font-weight: 500;
+
+}
+.container_categorias{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_categorias a{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+}
+  
+.img_categoria1 h3{
+
+    font-size: 32px;
+}
+.home_produtos h3{
+    font-family: "Libre Caslon Text", serif; 
+    font-weight: 400;
+
+    
+}
+.col_categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img_categoria2{
+    background-image: url(../img/Image\ \(1\).png\ jacquin.png);
+    
+
+}
+
+
+.img_categoria3{
+ background-image: url(../img/Image\ \(2\).png);
+    
+}
+.img_categoria2,
+.img_categoria3{
+/* width:25% ; */
+ width: 352px;
+height: 284px;
+display: flex;
+align-items:flex-end;
+padding:20px 10px ;
+font-size: 24px;
 }

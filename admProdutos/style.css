@@ -8,6 +8,7 @@
     --corprincipal:#fff4f4;
     --fontHaken: "Hanken Grotesk", sans-serif;
     --corDourado:#c5a028;
+    --corSecunadria:#fdf8f8;
 }
 
 .container{
@@ -187,7 +188,8 @@ max-width: 1200px;
 
 .form_coluna1,
 .form_coluna2{
-    width: 414px;
+ max-width: 414px;
+ width: 45%;
 }
 
 form label{
@@ -204,7 +206,7 @@ form label{
 font-family: var(--fontHaken);
 text-transform: uppercase;
 font-size: 12px;
-font-weight: 500;
+font-weight: 700;
 margin-bottom: 5px;
 
 }
@@ -218,6 +220,7 @@ background-color: transparent;
 border: none;
 border-bottom: solid 1px #444444;
 resize: none;
+
 }
 
 .inputs_form input[type=text]:focus,
@@ -255,36 +258,75 @@ form input[type=text]{
     height: 25px;
 }
 
+
+
+.input_cat{
+    width: 79%;
+}
+
+
 .input_cat input{
-    width: 200px;
+    max-width: 314px;
     margin-right: 20px;
 }
+
+.input_valor{
+    width: 91%;
+}
+
+
+
+
 .input_valor input{
     margin-right: 20px;
-    width: 360px;
+   max-width: 360px;
 }
  
 form input[type=button]{
     margin:  100px auto 0;
     display: block;
-    
+    font-family: var(--fontHaken);
     font-weight: 500px;
     font-size: 12px;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
     background-color: #000;
-    padding: 16px 40px;
+    padding: 16px 55px;
     border: none;
     letter-spacing: 3px;
+    cursor: pointer;
 
+}
+
+/* -----------------Lista de Produtos-------------- */
+
+.list_produtos{
+    background-color: var(--corSecunadria);
+}
+
+table{
+    /* background-color: brown; */
+    width: 100%;
+    font-family: var(--fontHaken);
+    text-transform: uppercase;
+}
+
+thead{
+    font-size: 12px;
+    font-weight: 600;
+    color: #444444;
+}
+
+tbody{
+    color:#aaaaaa;
 }
 
 
 
-
-
-
+table svg{
+    width: 35px;
+}
 
 
 /* ---------Medias--------- */
@@ -311,7 +353,25 @@ form input[type=button]{
 .box_h2 hr{
     margin-top: 10px;
     width: 70%;
-}
-
 
 }
+
+/* ---------------Formulario-------------- */
+
+.inputs_form{
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_coluna1,
+.form_coluna2{
+    max-width: 500px;
+    width: 80%;
+}
+
+}
+    
+
+
+

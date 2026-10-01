@@ -303,6 +303,8 @@ form input[type=button]{
 
 .list_produtos{
     background-color: var(--corSecunadria);
+    padding-top: 50px;
+    padding-bottom: 50px;/*ou padding: 50px 0; */
 }
 
 table{
@@ -310,12 +312,14 @@ table{
     width: 100%;
     font-family: var(--fontHaken);
     text-transform: uppercase;
+    border-collapse: collapse;
 }
 
 thead{
     font-size: 12px;
     font-weight: 600;
     color: #444444;
+    text-align: left;
 }
 
 tbody{
@@ -326,7 +330,42 @@ tbody{
 
 table svg{
     width: 35px;
+    color: #bd0000;
 }
+
+th,td{
+    border-bottom: solid 1px #444444;
+    padding: 5px 10px;
+}
+
+/* --------------Rodapé------------ */
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corprincipal);
+}
+
+.nav_footer{
+    display: flex;
+    justify-content:space-between;
+    width:160px;
+}
+
+ .footer_container span,
+ .nav_footer a{
+  font-family: "Hanken Grotesk", sans-serif;
+ }
+ .nav_footer a{
+    text-decoration: none;
+    color: #747878;
+ 
+}
+
+
+
+
 
 
 /* ---------Medias--------- */
@@ -370,7 +409,67 @@ table svg{
     width: 80%;
 }
 
+
+/* -------Tabela------------ */
+thead{
+    display: none;
+
 }
+
+tbody tr{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #444444;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: #00000052 5px 5px 5px;
+    max-width: 500px;
+    margin: 0 auto 50px ;
+
+}
+
+tbody td{
+    border: none;
+}
+
+tbody td::before{
+  content: attr(data-cell) " :";
+  font-size: 12px;
+  color: #444444;
+}
+
+/* ---------Footer---------- */
+.footer_container{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.footer img{
+width: 100px;
+}
+.footer span{
+
+}
+.footer
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
     
 
 
